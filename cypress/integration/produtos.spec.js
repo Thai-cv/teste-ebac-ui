@@ -31,4 +31,11 @@ describe('Funcionalidade Página de Produtos', () => {
             cy.get('.woocommerce-message').should('contain', quantidade + ' × “Aero Daily Fitness Tee” foram adicionados no seu carrinho.')
     });
 
+it('Deve adicionar produtos ao carrinho - Usando Comando Customizado', () => {
+    cy.addProdutos('Aero Daily Fitness Tee', 'XL', 'Yellow',  '3')
+});
+
+it('Não deve adicionar produtos sem estoque ao carrinho - Usando Comando Customizado', () => {
+    cy.addProdutos('Aero Daily Fitness Tee', 'XL', 'Black',  '1')
+});
 });
