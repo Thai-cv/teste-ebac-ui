@@ -12,7 +12,7 @@ context ('Funcionalidade Login', () =>{
         cy.screenshot()
     });
 
-    it ('Deve Fazer Login com Sucesso', () =>{
+    it('Deve Fazer Login com Sucesso', () =>{
         cy.get('#username') .type ('aluno_ebac@teste.com')
         cy.get('#password').type ('teste@teste.com')
         cy.get('.woocommerce-form > .button').click()
@@ -30,7 +30,7 @@ it('Deve Fazer login com Sucesso - Usando arquivo de Dados', () => {
     cy.get('.page-title').should('contain' , 'Minha conta')
 });
 
-it.only('Deve Fazer login com Sucesso - Usando fixture', () => {
+it('Deve Fazer login com Sucesso - Usando fixture', () => {
     cy.fixture ('perfil').then(dados =>{
         cy.get('#username') .type (dados.usuario)
         cy.get('#password').type (dados.senha, {log: false})
@@ -41,7 +41,7 @@ it.only('Deve Fazer login com Sucesso - Usando fixture', () => {
     })
 });
 
-it ('Deve exibir uma mensagem de erro ao inserir usuario inválido', () =>{ 
+it('Deve exibir uma mensagem de erro ao inserir usuario inválido', () =>{ 
     cy.get('#username') .type ('ebac@teste.com')
     cy.get('#password').type ('teste@teste.com')
     cy.get('.woocommerce-form > .button').click() 
@@ -49,7 +49,7 @@ it ('Deve exibir uma mensagem de erro ao inserir usuario inválido', () =>{
 
 })
 
-    it ('Deve exibir uma mensagem de erro ao inserir senha inválida', () =>{ 
+    it('Deve exibir uma mensagem de erro ao inserir senha inválida', () =>{ 
         cy.get('#username') .type ('aluno_ebac@teste.com')
         cy.get('#password').type ('teste@teste')
         cy.get('.woocommerce-form > .button').click()
