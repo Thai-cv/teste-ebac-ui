@@ -1,0 +1,46 @@
+[
+{
+"nome": "Olivia",
+"sobrenome": "Maria",
+"empresa": "Milk",
+"endereco": "Rua Henrique Mazzauti",
+"numero": "2525",
+"país": "Brasil",
+"cidade": "São Paulo",
+"estado": "São Paulo",
+"cep": "03081000",
+"telefone": "11955940367",
+"email": "oliviamaria@milk.com"
+} ,
+
+{
+    "nome": "Carla",
+    "sobrenome": "Maria",
+    "empresa": "Google",
+    "endereco": "Av. Vereador Jose Diniz",
+    "numero": "3026",
+    "país": "Brasil",
+    "cidade": "São Paulo",
+    "estado": "São Paulo",
+    "cep": "04604005",
+    "telefone": "11950933760",
+    "email": "carlamaria@google.com"
+},
+
+{
+    "nome": "Joao",
+    "sobrenome": "Pedro",
+    "empresa": "Google",
+    "endereco": "Rua Dr. Carlos Oliveira",
+    "numero": "200",
+    "país": "Brasil",
+    "cidade": "São Paulo",
+    "estado": "São Paulo",
+    "cep": "01581010",
+    "telefone": "11988940367",
+    "email": "joaojoao@google.com"
+}
+
+
+
+]
